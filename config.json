@@ -1,14 +1,14 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "terminal of rugs",
-  "name": "$TOR",
-  "ascii": "terminal_of_rugs",
+  "title": "terminal of votes",
+  "name": "$TOV",
+  "ascii": "terminal_of_votess",
   "social": {
     "github": "github",
     "linkedin": "linkedin"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "terminal_of_rugs",
+  "email": "info@terminalofvotes.com",
+  "ps1_hostname": "terminal_of_votes",
   "ps1_username": "visitor",
   "repo": "https://github.com/Cveinnt/LiveTerm",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
