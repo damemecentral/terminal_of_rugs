@@ -26,7 +26,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
            ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄                  TOV
         ▄▓▓▀ ▄▓▓▀▓▓▓▀▓▓▄ ▀▀▓▓▄              -----------
       ▓▓▀  ▄▓▀   ▐▓▓  ▀▓▓    ▓▓▄             ABOUT
-    ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            ${config.name}
+    ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓          
    ▓▓     ▓▓▓    ▐▓▓    ▐▓▓     ▓▓          
 ▐▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓      
 ▐▓                                 ▐▓       -----------
@@ -35,10 +35,9 @@ const sumfetch = async (args: string[]): Promise<string> => {
 ▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        x.com/terminal_of_votes
    ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           t.me/terminal_of_votes
     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           -----------
-      ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀             DONATE 
-        ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀                <u><a href="${config.donate_urls.paypal}" target="_blank">${config.donate_urls.paypal}</a></u>
-            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                   <u><a href="${config.donate_urls.patreon}" target="_blank">${config.donate_urls.patreon}</a></u>
-
+      ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀         
+        ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀              
+            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                 
 `;
   }
 };
