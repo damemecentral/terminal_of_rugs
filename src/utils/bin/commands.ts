@@ -1,113 +1,105 @@
 // List of commands that do not require API calls
-
 import * as bin from './index';
 import config from '../../../config.json';
 
-// Help
+// Help command
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
-  var c = '';
+  let c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
-      c += Object.keys(bin).sort()[i - 1] + '\n';
-    } else {
-      c += Object.keys(bin).sort()[i - 1] + ' ';
-    }
+    c += (i % 7 === 0) ? `${Object.keys(bin).sort()[i - 1]}\n` : `${Object.keys(bin).sort()[i - 1]} `;
   }
-  return `Welcome! Here are all the available commands:
-\n${c}\n
+  return `Welcome to the Political Terminal!
+\nHere are all the available commands:\n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
-`;
+Type 'sumfetch' to display a summary of your campaign shenanigans.`;
 };
 
-// Redirection
+// Redirection commands
 export const repo = async (args: string[]): Promise<string> => {
   window.open(`${config.repo}`);
-  return 'Opening Github repository...';
+  return 'Opening Github repository... and no, it wasn’t hacked by Russia.';
 };
 
-// About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
+  return `Hi, I'm ${config.name}. 
+Welcome to the politically rigged terminal!
 More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'sumfetch' - summary of suspicious activities.
+'resume' - my latest campaign strategy.
+'readme' - my crypto promises.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
-  return 'Opening resume...';
+  return 'Opening resume... Warning: It’s full of lies, just like a campaign speech.';
 };
-
 
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
-
-  return 'Opening github...';
+  return 'Opening GitHub... just like opening Pandora’s box.';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
-
-  return 'Opening linkedin...';
+  return 'Opening LinkedIn... and you’ll probably be spammed by “thought leaders.”';
 };
 
+// Voting system commands
 export const recount = async (args: string[]): Promise<string> => {
-  return `Sorry, we've tried counting this command three times, but it keeps coming up Trump. Try again, or maybe it's rigged.`;
+  return `Recount initiated... but it still says Trump. Try again or blame the rigged system.`;
 };
 
 export const riggedElection = async (args: string[]): Promise<string> => {
-  return `This command has been flagged for suspicious activity, just like a Nevada vote. Better luck next time.`;
+  return `This command has been flagged for irregularities. Just like a Nevada voting machine.`;
 };
 
 export const kamalaLaugh = async (args: string[]): Promise<string> => {
-  return `*Kamala's cackle echoes in the terminal* — whatever you're trying, it ain't working.`;
+  return `*Kamala Harris laughs uncontrollably* Whatever you’re doing won’t work.`;
 };
 
 export const trumpTweet = async (args: string[]): Promise<string> => {
-  return `404 Error: Trump's Twitter account has been banned. You're on your own now!`;
+  return `404 Error: Trump's Twitter account has been banned. It's a dark day for democracy!`;
 };
 
 export const fakeNews = async (args: string[]): Promise<string> => {
-  return `This command has been blocked due to fake news allegations. Proceed with caution!`;
+  return `Command not found. Are you sure this isn't fake news?`;
 };
 
 export const voterFraud = async (args: string[]): Promise<string> => {
-  return `System error: Too many duplicate requests. Is this voter fraud?`;
+  return `Error: Too many duplicate requests! Is this voter fraud or just bad code?`;
 };
 
 export const electoralCollege = async (args: string[]): Promise<string> => {
-  return `Congrats, you’ve won the popular vote... but the terminal is going with the electoral college. Try again.`;
+  return `Congrats, you won the popular vote... but the terminal chose the electoral college winner. Better luck next time.`;
 };
 
 export const stormTheCapitol = async (args: string[]): Promise<string> => {
-  return `Access denied. You’re not authorized to storm this directory.`;
+  return `Access denied. You’re not authorized to storm this terminal.`;
 };
 
-
+// Sudo command
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // Classic rickroll
+  return `Permission denied: You don't have the power to run this command... not even Trump did.`;
 };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
 
-████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗              ██████╗ ███████╗   ██████╗ ██╗   ██╗ ██████╗ ███████╗
-╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║             ██╔═══██╗██╔════╝   ██╔══██╗██║   ██║██╔════╝ ██╔════╝
-   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║             ██║   ██║█████╗     ██████╔╝██║   ██║██║  ███╗███████╗
-   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║             ██║   ██║██╔══╝     ██╔══██╗██║   ██║██║   ██║╚════██║
-   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗███████╗╚██████╔╝██║███████╗██║  ██║╚██████╔╝╚██████╔╝███████║
-   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝
+████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗              ██████╗ ███████╗  ██╗   ██╗ ██████╗ ████████╗███████╗███████╗
+╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║             ██╔═══██╗██╔════╝  ██║   ██║██╔═══██╗╚══██╔══╝██╔════╝██╔════╝
+   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║             ██║   ██║█████╗    ██║   ██║██║   ██║   ██║   █████╗  ███████╗
+   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║             ██║   ██║██╔══╝    ╚██╗ ██╔╝██║   ██║   ██║   ██╔══╝  ╚════██║
+   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗███████╗╚██████╔╝██║███████╗╚████╔╝ ╚██████╔╝   ██║   ███████╗███████║
+   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝╚══════╝ ╚═══╝   ╚═════╝    ╚═╝   ╚══════╝╚══════╝
+                                                                                                                                       
                                                                                                                                
 
 Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
+Type 'sumfetch' to display your campaign summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
