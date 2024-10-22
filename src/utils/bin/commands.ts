@@ -56,44 +56,6 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-// Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
-};
-
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
-};
-
-// Typical linux commands
-export const echo = async (args: string[]): Promise<string> => {
-  return args.join(' ');
-};
-
-export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
-};
-
-export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
-};
-
 export const recount = async (args: string[]): Promise<string> => {
   return `Sorry, we've tried counting this command three times, but it keeps coming up Trump. Try again, or maybe it's rigged.`;
 };
