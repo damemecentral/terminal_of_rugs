@@ -3,7 +3,7 @@ import config from '../../../config.json';
 const sumfetch = async (args: string[]): Promise<string> => {
   if (config.ascii === 'cveinnt') {
     return `                                                  
-             @@@@@@@@@@@@@                   sumfetch: summary display
+             @@@@@@@@@@@@@                   TOR: summary display
         @@@@               @@@@             -----------
       @@                       @@            ABOUT
     @@                           @@          ${config.name}
