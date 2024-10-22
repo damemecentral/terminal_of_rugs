@@ -4,21 +4,21 @@ import config from '../../../config.json';
 
 // Help command
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
+  const commands = Object.keys(bin).sort();
   let c = '';
-  for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    c += (i % 7 === 0) ? `${Object.keys(bin).sort()[i - 1]}\n` : `${Object.keys(bin).sort()[i - 1]} `;
+  for (let i = 0; i < commands.length; i++) {
+    c += (i % 7 === 6) ? `${commands[i]}\n` : `${commands[i]} `;
   }
   return `Welcome to the Political Terminal!
 \nHere are all the available commands:\n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display a summary of your campaign shenanigans.`;
+Type 'sumfetch' to display your campaign shenanigans.`;
 };
 
 // Redirection commands
 export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
+  window.open(`${config.repo}`, '_blank');
   return 'Opening Github repository... and no, it wasn’t hacked by Russia.';
 };
 
@@ -32,21 +32,21 @@ More about me:
 };
 
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
+  window.open(`${config.resume_url}`, '_blank');
   return 'Opening resume... Warning: It’s full of lies, just like a campaign speech.';
 };
 
 export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
+  window.open(`https://github.com/${config.social.github}/`, '_blank');
   return 'Opening GitHub... just like opening Pandora’s box.';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`, '_blank');
   return 'Opening LinkedIn... and you’ll probably be spammed by “thought leaders.”';
 };
 
-// Voting system commands
+// Voting system-related commands
 export const recount = async (args: string[]): Promise<string> => {
   return `Recount initiated... but it still says Trump. Try again or blame the rigged system.`;
 };
@@ -79,9 +79,9 @@ export const stormTheCapitol = async (args: string[]): Promise<string> => {
   return `Access denied. You’re not authorized to storm this terminal.`;
 };
 
-// Sudo command
+// Sudo command (Rickroll)
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // Classic rickroll
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // Rickroll
   return `Permission denied: You don't have the power to run this command... not even Trump did.`;
 };
 
