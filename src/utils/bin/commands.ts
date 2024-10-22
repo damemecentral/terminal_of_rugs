@@ -94,30 +94,38 @@ fake
 directories`;
 };
 
-export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+export const recount = async (args: string[]): Promise<string> => {
+  return `Sorry, we've tried counting this command three times, but it keeps coming up Trump. Try again, or maybe it's rigged.`;
 };
 
-export const date = async (args: string[]): Promise<string> => {
-  return new Date().toString();
+export const riggedElection = async (args: string[]): Promise<string> => {
+  return `This command has been flagged for suspicious activity, just like a Nevada vote. Better luck next time.`;
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
+export const kamalaLaugh = async (args: string[]): Promise<string> => {
+  return `*Kamala's cackle echoes in the terminal* — whatever you're trying, it ain't working.`;
 };
 
-export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
+export const trumpTweet = async (args: string[]): Promise<string> => {
+  return `404 Error: Trump's Twitter account has been banned. You're on your own now!`;
 };
 
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
+export const fakeNews = async (args: string[]): Promise<string> => {
+  return `This command has been blocked due to fake news allegations. Proceed with caution!`;
 };
 
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
+export const voterFraud = async (args: string[]): Promise<string> => {
+  return `System error: Too many duplicate requests. Is this voter fraud?`;
 };
+
+export const electoralCollege = async (args: string[]): Promise<string> => {
+  return `Congrats, you’ve won the popular vote... but the terminal is going with the electoral college. Try again.`;
+};
+
+export const stormTheCapitol = async (args: string[]): Promise<string> => {
+  return `Access denied. You’re not authorized to storm this directory.`;
+};
+
 
 export const sudo = async (args?: string[]): Promise<string> => {
   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
