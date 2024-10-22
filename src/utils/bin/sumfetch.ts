@@ -32,8 +32,8 @@ const sumfetch = async (args: string[]): Promise<string> => {
 ▐▓                                 ▐▓       -----------
 ▐▓        > terminal_of_votes      ▐▓        CONTACT 
 ▐▓                                 ▐▓        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
-▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        <u><a href="https://x.com/${config.social.github}" target="_blank">twitter.com/${config.social.twitter}</a></u>
-   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        x.com/terminal_of_votes
+   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           t.me/terminal_of_votes
     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           -----------
       ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀             DONATE 
         ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀                <u><a href="${config.donate_urls.paypal}" target="_blank">${config.donate_urls.paypal}</a></u>
