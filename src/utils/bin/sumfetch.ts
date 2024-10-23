@@ -30,10 +30,10 @@ const sumfetch = async (args: string[]): Promise<string> => {
    ▓▓     ▓▓▓    ▐▓▓    ▐▓▓     ▓▓          
 ▐▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓      
 ▐▓                                 ▐▓       -----------
-▐▓        > terminal_of_votes      ▐▓        CONTACT 
-▐▓                                 ▐▓        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
-▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        x.com/terminal_of_votes
-   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           t.me/terminal_of_votes
+▐▓        > terminal_of_votes      ▐▓        CONTACT 
+▐▓                                 ▐▓        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        x.com/terminalofvotes
+   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           
     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           -----------
       ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀         
         ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀              
