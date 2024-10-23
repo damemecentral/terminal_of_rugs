@@ -35,22 +35,4 @@ export const weather = async (args: string[]): Promise<string> => {
   return weather;
 };
 
-const commands = {
-  help: help,
-  repo: repo,
-  about: about,
-  resume: resume,
-  github: github,
-  linkedin: linkedin,
-  recount: recount,
-  riggedElection: riggedElection,
-  kamalaLaugh: kamalaLaugh,
-  trumpTweet: trumpTweet,
-  fakeNews: fakeNews,  // This should match the exact function name
-  voterFraud: voterFraud,
-  electoralCollege: electoralCollege,
-  stormTheCapitol: stormTheCapitol,
-  sudo: sudo,
-  banner: banner,
-};
 
