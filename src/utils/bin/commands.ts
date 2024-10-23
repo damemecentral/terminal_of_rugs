@@ -1,30 +1,37 @@
 // List of commands that do not require API calls
-import * as bin from './index';  // Ensure that './index' properly exports the commands
-import config from '../../../config.json';  // Check the structure of config.json
+
+import * as bin from './index';
+import config from '../../../config.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort();
-  let c = '';
-  for (let i = 0; i < commands.length; i++) {
-    c += commands[i] + (i % 7 === 6 ? '\n' : ' '); // Add a newline after every 7 commands
+  const commands = Object.keys(bin).sort().join(', ');
+  var c = '';
+  for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
+    if (i % 7 === 0) {
+      c += Object.keys(bin).sort()[i - 1] + '\n';
+    } else {
+      c += Object.keys(bin).sort()[i - 1] + ' ';
+    }
   }
-  return `Welcome! Here are all the available commands:\n\n${c}\n[tab]: trigger completion.\n[ctrl+l]/clear: clear terminal.\nType 'sumfetch' to display summary.`;
+  return `Welcome! Here are all the available commands:
+\n${c}\n
+[tab]: trigger completion.
+[ctrl+l]/clear: clear terminal.\n
+Type 'sumfetch' to display summary.
+`;
 };
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Welcome to the USA 2024 Voting System!\nFollow us on x.com/terminal_of_votes`;
+  return `Welcome to the USA 2024 Voting System! 
+Follow us on x.com/terminal_of_votes`;
 };
 
 // Resume (Ensure `config.resume_url` is properly defined in config.json)
 export const resume = async (args: string[]): Promise<string> => {
-  if (config.resume_url) {
-    window.open(config.resume_url);
-    return 'Opening resume...';
-  } else {
-    return 'Error: Resume URL not defined in config.';
-  }
+  window.open(`${config.resume_url}`);
+  return 'Opening resume...';
 };
 
 // Vote Kamala
@@ -69,9 +76,9 @@ export const banner = (args?: string[]): string => {
    ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗███████╗╚██████╔╝██║███████╗╚████╔╝ ╚██████╔╝   ██║   ███████╗███████║
    ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝╚══════╝ ╚═══╝   ╚═════╝    ╚═╝   ╚══════╝╚══════╝
                                                                                                                                        
+                                                                                                                               
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display your campaign summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
