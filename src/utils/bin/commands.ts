@@ -25,7 +25,7 @@ Type 'sumfetch' to display summary.
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Welcome to the USA 2024 Voting System! 
-Follow us on x.com/terminal_of_votes`;
+Follow us on x.com/terminalofvotes`;
 };
 
 // Vote Kamala
@@ -46,7 +46,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 
 // Twitter
 export const twitter = async (args?: string[]): Promise<string> => {
-  window.open('https://www.x.com/terminal_of_votes', '_blank'); 
+  window.open('https://www.x.com/terminalofvotes', '_blank'); 
   return `Follow us on Twitter`;
 };
 
