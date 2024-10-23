@@ -25,7 +25,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
     return `
            ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄                  TOV
         ▄▓▓▀ ▄▓▓▀▓▓▓▀▓▓▄ ▀▀▓▓▄              -----------
-      ▓▓▀  ▄▓▀   ▐▓▓  ▀▓▓    ▓▓▄             ABOUT
+      ▓▓▀  ▄▓▀   ▐▓▓  ▀▓▓    ▓▓▄             G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump
     ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓          
    ▓▓     ▓▓▓    ▐▓▓    ▐▓▓     ▓▓          
 ▐▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓      
