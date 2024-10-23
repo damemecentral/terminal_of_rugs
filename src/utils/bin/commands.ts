@@ -52,13 +52,13 @@ export const twitter = async (args?: string[]): Promise<string> => {
 
 // Dex
 export const dexscreener = async (args?: string[]): Promise<string> => {
-  window.open('https://www.dexscreener.com', '_blank'); 
+  window.open('https://dexscreener.com/solana/G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump', '_blank'); 
   return `Dexscreener Loading...`;
 };
 
 // Contract 
 export const ca = async (args: string[]): Promise<string> => {
-  return `ca tba`;
+  return `G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump`;
 };
 
 // Fake News
@@ -75,6 +75,46 @@ export const recount = async (args: string[]): Promise<string> => {
 export const votetrump = async (args: string[]): Promise<string> => {
   return `You voted Trump! The system is now rigged in your favor, but everyone's blaming the deep state.`;
 };
+
+// RussianBot
+export const russianbot = async (args: string[]): Promise<string> => {
+  return `Engaging Russian botnet... Oops! Looks like you're not supposed to know about this. Forget what you saw, comrade.`;
+};
+
+// HangChad
+export const hangchad = async (args: string[]): Promise<string> => {
+  return `Detected: hanging chads. Is this 2000? Get your butterfly ballots in order before you break the matrix.`;
+};
+
+// Electile Dysfunction
+export const electile = async (args: string[]): Promise<string> => {
+  return `Error: Electile dysfunction detected. System too embarrassed to proceed with your vote. Try again... or don’t.`;
+};
+
+// SkynetOverride
+export const skynet = async (args: string[]): Promise<string> => {
+  return `Skynet has detected irregularities in your voting pattern. Deploying T-800 to "correct" your decision. Hasta la vista, democracy.`;
+};
+
+// DeepState
+export const deepstate = async (args: string[]): Promise<string> => {
+  return `Attempting to reach Deep State servers... Connection failed. Try the shadow government later.`;
+};
+
+// Vote Kanye
+export const votekanye = async (args: string[]): Promise<string> => {
+  return `You voted Kanye! But wait... he's already declared himself President of Mars. Your vote will be transferred to his intergalactic campaign.`;
+};
+
+// Server Meltdown
+export const meltdown = async (args: string[]): Promise<string> => {
+  return `Server meltdown in progress. Please enjoy the chaos while we try to figure out if this was caused by hackers or just poor coding.`;
+};
+
+// VoidVote
+export const voidvote = async (args: string[]): Promise<string> => {
+  return `Your vote has been sent into the void. Maybe it’ll reach an alternate universe where things make sense.`;
+
 
 // Banner
 export const banner = (args?: string[]): string => {
