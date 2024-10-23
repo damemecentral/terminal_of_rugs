@@ -30,12 +30,8 @@ export const repo = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
-More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+  return `Welcome to the USA 2024 Voting System!
+Follow us on x.com/terminal_of_votes
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -55,10 +51,6 @@ here are the ways you can support my work:
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
-};
-
-export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
 };
 
 export const fakenews = async (args: string[]): Promise<string> => {
