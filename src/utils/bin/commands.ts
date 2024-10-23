@@ -50,6 +50,12 @@ export const twitter = async (args?: string[]): Promise<string> => {
   return `Follow us on Twitter`;
 };
 
+// Dex
+export const dexscreener = async (args?: string[]): Promise<string> => {
+  window.open('https://www.dexscreener.com', '_blank'); 
+  return `Dexscreener Loading...`;
+};
+
 // Contract 
 export const ca = async (args: string[]): Promise<string> => {
   return `ca tba`;
@@ -85,5 +91,7 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display your campaign summary.
+
+ca: tba
 `;
 };
