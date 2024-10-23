@@ -1,4 +1,4 @@
-import { typeText } from '../utils/typing';
+import { typeText } from '../../utils/typing';
 
 export const help = async (args) => {
   const commands = Object.keys(bin).sort().join(', ');
