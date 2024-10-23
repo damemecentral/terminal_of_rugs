@@ -1,3 +1,21 @@
+import { typeText } from '../utils/typing';
+
+export const help = async (args) => {
+  const commands = Object.keys(bin).sort().join(', ');
+  let c = '';
+  for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
+    if (i % 7 === 0) {
+      c += Object.keys(bin).sort()[i - 1] + '\n';
+    } else {
+      c += Object.keys(bin).sort()[i - 1] + ' ';
+    }
+  }
+
+  const helpText = `Welcome! Here are all the available commands:\n\n${c}\n\n[tab]: trigger completion.\n[ctrl+l]/clear: clear terminal.\nType 'sumfetch' to display summary.\n`;
+  await typeText(helpText);
+  return '';
+};
+
 // List of commands that do not require API calls
 
 import * as bin from './index';
