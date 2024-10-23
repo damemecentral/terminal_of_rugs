@@ -44,6 +44,17 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: with little power comes... no responsibility?`;
 };
 
+// Twitter
+export const twitter = async (args?: string[]): Promise<string> => {
+  window.open('https://www.x.com/terminal_of_votes', '_blank'); 
+  return `Follow us on Twitter`;
+};
+
+// Contract 
+export const ca = async (args: string[]): Promise<string> => {
+  return `ca tba`;
+};
+
 // Fake News
 export const fakenews = async (args: string[]): Promise<string> => {
   return `This command has been blocked due to fake news allegations. Proceed with caution!`;
