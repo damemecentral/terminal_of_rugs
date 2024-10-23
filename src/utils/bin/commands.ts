@@ -52,45 +52,6 @@ here are the ways you can support my work:
 `;
 };
 
-// Contact
-export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`);
-  return `Opening mailto:${config.email}...`;
-};
-
-export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
-
-  return 'Opening github...';
-};
-
-export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
-
-  return 'Opening linkedin...';
-};
-
-// Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
-};
-
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
-};
-
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
@@ -100,36 +61,24 @@ export const whoami = async (args: string[]): Promise<string> => {
   return `${config.ps1_username}`;
 };
 
-export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
-};
-
 export const fakenews = async (args: string[]): Promise<string> => {
   return `This command has been blocked due to fake news allegations. Proceed with caution!`;
 };
 
-export const date = async (args: string[]): Promise<string> => {
-  return new Date().toString();
+export const recount = async (args: string[]): Promise<string> => {
+  return `Recounting the votes... oh wait, it’s still Trump. Maybe next time!`;
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
+export const votetrump = async (args: string[]): Promise<string> => {
+  return `You voted Trump! The system is now rigged in your favor, but everyone's blaming the deep state.`;
 };
 
-export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
+export const votekamala = async (args: string[]): Promise<string> => {
+  return `You voted Kamala! A laugh echoes through the system, but nothing seems to change... except your taxes.`;
 };
 
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
+export const deadvoter = async (args: string[]): Promise<string> => {
+  return `You are trying to vote from beyond the grave. Turns out, dead voters are more active than the living.`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
