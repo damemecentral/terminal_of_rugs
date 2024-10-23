@@ -16,7 +16,7 @@ export const help = async (args) => {
   return '';
 };
 
-// List of commands that do not require API calls
+// List of commands that do not require API calls 
 
 import * as bin from './index';
 import config from '../../../config.json';
