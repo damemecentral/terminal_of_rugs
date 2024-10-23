@@ -28,12 +28,6 @@ export const about = async (args: string[]): Promise<string> => {
 Follow us on x.com/terminal_of_votes`;
 };
 
-// Resume (Ensure `config.resume_url` is properly defined in config.json)
-export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
-  return 'Opening resume...';
-};
-
 // Vote Kamala
 export const votekamala = async (args: string[]): Promise<string> => {
   return `You voted Kamala! A laugh echoes through the system, but nothing seems to change... except your taxes.`;
