@@ -114,7 +114,7 @@ export const meltdown = async (args: string[]): Promise<string> => {
 // VoidVote
 export const voidvote = async (args: string[]): Promise<string> => {
   return `Your vote has been sent into the void. Maybe it’ll reach an alternate universe where things make sense.`;
-
+};
 
 // Banner
 export const banner = (args?: string[]): string => {
