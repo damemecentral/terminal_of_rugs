@@ -116,6 +116,56 @@ export const voidvote = async (args: string[]): Promise<string> => {
   return `Your vote has been sent into the void. Maybe it’ll reach an alternate universe where things make sense.`;
 };
 
+// ApocalypseMode
+export const apocalypse = async (args: string[]): Promise<string> => {
+  return `The end is near... your vote has triggered Apocalypse Mode. Expect fire, brimstone, and a total server meltdown in 3...2...1...`;
+};
+
+// VoterSuppression
+export const suppression = async (args: string[]): Promise<string> => {
+  return `Voter suppression in progress. Your vote has been "misplaced" in a dumpster somewhere. Better luck next election... if there is one.`;
+};
+
+// GlitchInTheSystem
+export const glitch = async (args: string[]): Promise<string> => {
+  return `Oops, a glitch in the system! All votes now count for... no one. Democracy.exe has stopped responding.`;
+};
+
+// DoomVoting
+export const doomvote = async (args: string[]): Promise<string> => {
+  return `Congratulations, your vote has summoned the Four Horsemen of the Apocalypse. Good job breaking it, hero.`;
+};
+
+// 1984Override
+export const bigbrother = async (args: string[]): Promise<string> => {
+  return `Big Brother is watching... and has overwritten your vote with the "correct" choice. Resistance is futile.`;
+};
+
+// EternalVoid
+export const eternalvoid = async (args: string[]): Promise<string> => {
+  return `Your vote has been cast into the eternal void. No one will ever see it again, and neither will you. Welcome to the abyss.`;
+};
+
+// ServerPurge
+export const purge = async (args: string[]): Promise<string> => {
+  return `Server Purge initiated. All votes have been erased, and society crumbles into chaos. Was it worth it? Probably not.`;
+};
+
+// HackThePlanet
+export const hacktheplanet = async (args: string[]): Promise<string> => {
+  return `You tried hacking the system... but instead, you've unleashed the AI overlords. Skynet is now in control. Humans no longer need to vote.`;
+};
+
+// ElectionError404
+export const error404 = async (args: string[]): Promise<string> => {
+  return `Error 404: Election Not Found. The democracy you're looking for no longer exists. Maybe it never did.`;
+};
+
+// VoteNihilism
+export const votenihilism = async (args: string[]): Promise<string> => {
+  return `You voted... but does anything matter? In the grand scheme of things, the universe is indifferent to your futile attempt at democracy.`;
+};
+
 // Banner
 export const banner = (args?: string[]): string => {
   return `
