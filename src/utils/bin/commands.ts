@@ -1,12 +1,11 @@
 // List of commands that do not require API calls
-
-import * as bin from './index';
-import config from '../../../config.json';
+import * as bin from './index';  // Ensure './index' has the correct commands exported
+import config from '../../../config.json';  // Make sure config.json is properly structured
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
-  var c = '';
+  let c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
     if (i % 7 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
@@ -14,18 +13,12 @@ export const help = async (args: string[]): Promise<string> => {
       c += Object.keys(bin).sort()[i - 1] + ' ';
     }
   }
-  return `Welcome! Here are all the available commands:
-\n${c}\n
-[tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
-`;
+  return `Welcome! Here are all the available commands:\n\n${c}\n[tab]: trigger completion.\n[ctrl+l]/clear: clear terminal.\nType 'sumfetch' to display summary.`;
 };
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Welcome to the USA 2024 Voting System! 
-Follow us on x.com/terminal_of_votes`;
+  return `Welcome to the USA 2024 Voting System! \nFollow us on x.com/terminal_of_votes\n`;
 };
 
 // Vote Kamala
@@ -62,7 +55,6 @@ export const votetrump = async (args: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-
 ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗              ██████╗ ███████╗  ██╗   ██╗ ██████╗ ████████╗███████╗███████╗
 ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║             ██╔═══██╗██╔════╝  ██║   ██║██╔═══██╗╚══██╔══╝██╔════╝██╔════╝
    ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║             ██║   ██║█████╗    ██║   ██║██║   ██║   ██║   █████╗  ███████╗
@@ -70,8 +62,6 @@ export const banner = (args?: string[]): string => {
    ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗███████╗╚██████╔╝██║███████╗╚████╔╝ ╚██████╔╝   ██║   ███████╗███████║
    ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝╚══════╝ ╚═══╝   ╚═════╝    ╚═╝   ╚══════╝╚══════╝
                                                                                                                                        
-                                                                                                                               
-
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display your campaign summary.
 `;
