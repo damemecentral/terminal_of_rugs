@@ -182,6 +182,6 @@ export const banner = (args?: string[]): string => {
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display your campaign summary.
 
-ca: tba
+ca: G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump
 `;
 };
