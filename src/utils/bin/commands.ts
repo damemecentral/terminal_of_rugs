@@ -52,13 +52,13 @@ export const twitter = async (args?: string[]): Promise<string> => {
 
 // Dex
 export const dexscreener = async (args?: string[]): Promise<string> => {
-  window.open('https://dexscreener.com/solana/G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump', '_blank'); 
+  window.open('https://dexscreener.com/solana/9NDb1789b6KNEiyJAs7P9Fw2KHQHtn3fdGjfunRkpump', '_blank'); 
   return `Dexscreener Loading...`;
 };
 
 // Contract 
 export const ca = async (args: string[]): Promise<string> => {
-  return `G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump`;
+  return `9NDb1789b6KNEiyJAs7P9Fw2KHQHtn3fdGjfunRkpump`;
 };
 
 // Fake News
@@ -182,6 +182,6 @@ export const banner = (args?: string[]): string => {
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display your campaign summary.
 
-ca: G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump
+ca: 9NDb1789b6KNEiyJAs7P9Fw2KHQHtn3fdGjfunRkpump
 `;
 };
