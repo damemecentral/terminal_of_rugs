@@ -52,13 +52,13 @@ export const twitter = async (args?: string[]): Promise<string> => {
 
 // Dex
 export const dexscreener = async (args?: string[]): Promise<string> => {
-  window.open('https://dexscreener.com/solana/G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump', '_blank'); 
+  window.open('https://dexscreener.com/solana/EqUaAuEdakVBKGbiF95as7Amk2sRV1SfxFBGX4THpump', '_blank'); 
   return `Dexscreener Loading...`;
 };
 
 // Contract 
 export const ca = async (args: string[]): Promise<string> => {
-  return `G7GBBDKGv8fTXiNvhvCBp2mY9Dqym8eMLHKT3fYPpump`;
+  return `EqUaAuEdakVBKGbiF95as7Amk2sRV1SfxFBGX4THpump`;
 };
 
 // Fake News
